@@ -5,8 +5,12 @@ import "./UserList.css";
 export const UserList = () => {
   return (
     <div className="user-list">
-      <UserListForm />
-      <UserListTable />
+      <div className="form-container">
+        <UserListForm />
+      </div>
+      <div className="table-container">
+        <UserListTable />
+      </div>
     </div>
   );
 };

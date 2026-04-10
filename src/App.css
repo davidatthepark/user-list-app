@@ -1,5 +1,7 @@
-.section-heading {
-  border-bottom: 1px solid black;
-  font-weight: normal;
-  font-size: 36px;
+.app {
+  padding: 24px;
+
+  .heading {
+    text-align: center;
+  }
 }

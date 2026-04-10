@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: normal;
+  padding: 0px 24px 24px 24px;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 36px;
+}
+
+button {
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+
+  input,
+  select {
+    box-sizing: border-box;
+    height: 24px;
+    margin-bottom: 12px;
+  }
+
+  button[type="submit"] {
+    border: none;
+    color: white;
+    background: #2196f3;
+    padding: 6px;
+    text-align: center;
+  }
+}

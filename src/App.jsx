@@ -3,10 +3,10 @@ import { UserList } from "./components/UserList/UserList";
 
 function App() {
   return (
-    <>
-      <h1>User List App</h1>
+    <div className="app">
+      <h1 className="heading">User List App</h1>
       <UserList />
-    </>
+    </div>
   );
 }
 

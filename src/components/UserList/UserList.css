@@ -1,3 +1,28 @@
 .user-list {
   display: flex;
+  flex-direction: column;
+
+  .form-container {
+    background: #d8d6d6;
+    border-right: 1px solid black;
+    padding: 24px;
+  }
+
+  .table-container {
+    padding: 24px;
+  }
+}
+
+@media (min-width: 540px) {
+  .user-list {
+    flex-direction: row;
+
+    .form-container {
+      width: 30%;
+    }
+
+    .table-container {
+      width: 70%;
+    }
+  }
 }
