@@ -1,7 +1,8 @@
 .app {
   padding: 24px;
 
-  .heading {
+  h1 {
+    margin-bottom: 32px;
     text-align: center;
   }
 }

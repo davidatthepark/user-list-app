@@ -1,5 +1,6 @@
-const usersMockDataTwo = [
+export const usersMockDataTwo = [
   {
+    id: 4,
     firstName: "Nina",
     lastName: "Schmitt",
     email: "ninaschmitt@example.com",
@@ -8,6 +9,7 @@ const usersMockDataTwo = [
     updated: "Thu Jan 05 2020 14:33:29 GMT-0800 (Pacific Standard Time)",
   },
   {
+    id: 5,
     firstName: "Forest",
     lastName: "Gump",
     email: "forestgump@example.com",
@@ -16,6 +18,7 @@ const usersMockDataTwo = [
     updated: "Fri June 06 2022 19:01:07 GMT-0800 (Pacific Standard Time)",
   },
   {
+    id: 6,
     firstName: "Wizard",
     lastName: "Oz",
     email: "wizardoz@example.com",
@@ -24,6 +27,7 @@ const usersMockDataTwo = [
     updated: "Mon Nov 03 2022 12:12:45 GMT-0800 (Pacific Standard Time)",
   },
   {
+    id: 7,
     firstName: "Keanu",
     lastName: "Reeves",
     email: "theone@matrix.com",

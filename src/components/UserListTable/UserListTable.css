@@ -1,0 +1,27 @@
+.user-list-table {
+  background: #f6f6f6;
+  height: 100%;
+  padding: 24px;
+  overflow-x: auto;
+
+  h2 {
+    border-bottom: 1px solid black;
+    margin-bottom: 32px;
+  }
+
+  table {
+    white-space: normal;
+  }
+
+  tr:not(last-child) {
+    border-bottom: 1px solid black;
+  }
+}
+
+@media (min-width: 768px) {
+  .user-list-table {
+    .table {
+      white-space: nowrap;
+    }
+  }
+}

@@ -1,9 +1,8 @@
 import "./UserListForm.css";
 
-// add basic validation
 export const UserListForm = () => {
   return (
-    <>
+    <section className="user-list-form">
       <h2>Add/Edit User</h2>
       <form>
         <label htmlFor="first-name">First Name</label>
@@ -38,6 +37,6 @@ export const UserListForm = () => {
         </select>
         <button type="submit">Add</button>
       </form>
-    </>
+    </section>
   );
 };
