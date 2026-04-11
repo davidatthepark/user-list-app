@@ -1,30 +1,43 @@
 .user-list-table {
   background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
   height: 100%;
   padding: 32px;
-  overflow-x: scroll;
 
   h2 {
     border-bottom: 1px solid black;
     margin-bottom: 32px;
   }
 
-  table {
-    white-space: nowrap;
+  .table-container {
+    flex: 1;
+    overflow-x: scroll;
+    width: 100%;
+  }
 
+  table {
     width: 100%;
   }
 
   th,
   td {
     padding: 12px;
+    height: 100%;
   }
 
   .status-cell {
-    align-items: center;
-    display: inline-flex;
-    gap: 2px;
+    white-space: nowrap;
     text-transform: capitalize;
+    vertical-align: center;
+
+    .status-icon {
+      vertical-align: middle;
+    }
+
+    .status {
+      margin-left: 3px;
+    }
   }
 
   .action-buttons-cell {

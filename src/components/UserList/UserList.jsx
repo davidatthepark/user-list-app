@@ -8,10 +8,10 @@ export const UserList = ({ initialUsers = [] }) => {
 
   return (
     <div className="user-list">
-      <div className="form-container">
+      <div className="user-list-form-container">
         <UserListForm />
       </div>
-      <div className="table-container">
+      <div className="user-list-table-container">
         <UserListTable users={users} />
       </div>
     </div>

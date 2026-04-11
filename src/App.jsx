@@ -1,7 +1,7 @@
 import "./App.css";
 import { UserList } from "./components/UserList/UserList";
-import { usersMockDataOne } from "./data/usersMockDataOne";
-import { usersMockDataTwo } from "./data/usersMockDataTwo";
+import { usersMockDataOne } from "./mockData/usersMockDataOne";
+import { usersMockDataTwo } from "./mockData/usersMockDataTwo";
 
 function App() {
   return (

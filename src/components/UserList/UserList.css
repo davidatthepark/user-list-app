@@ -4,12 +4,9 @@
   margin-bottom: 48px;
   min-height: 480px;
 
-  .form-container {
+  .user-list-form-container {
     border-bottom: 1px solid black;
     border-right: none;
-  }
-
-  .table-container {
   }
 }
 
@@ -17,13 +14,13 @@
   .user-list {
     flex-direction: row;
 
-    .form-container {
+    .user-list-form-container {
       border-bottom: none;
       border-right: 1px solid black;
       width: 30%;
     }
 
-    .table-container {
+    .user-list-table-container {
       width: 70%;
     }
   }
