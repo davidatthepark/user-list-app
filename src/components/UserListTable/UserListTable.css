@@ -1,8 +1,8 @@
 .user-list-table {
   background: #f6f6f6;
   height: 100%;
-  padding: 24px;
-  overflow-x: auto;
+  padding: 32px;
+  overflow-x: scroll;
 
   h2 {
     border-bottom: 1px solid black;
@@ -10,18 +10,35 @@
   }
 
   table {
-    white-space: normal;
+    white-space: nowrap;
+
+    width: 100%;
   }
 
-  tr:not(last-child) {
-    border-bottom: 1px solid black;
+  th,
+  td {
+    padding: 12px;
   }
-}
 
-@media (min-width: 768px) {
-  .user-list-table {
-    .table {
-      white-space: nowrap;
+  .status-cell {
+    align-items: center;
+    display: inline-flex;
+    gap: 2px;
+    text-transform: capitalize;
+  }
+
+  .action-buttons-cell {
+    align-items: center;
+    display: inline-flex;
+    gap: 4px;
+
+    button {
+      background: #4e4d4d;
+      border-radius: 4px;
     }
+  }
+
+  tr:not(:last-child) {
+    border-bottom: 1px solid black;
   }
 }

@@ -46,6 +46,10 @@ form {
   }
 }
 
+table {
+  border-collapse: collapse;
+}
+
 .visually-hidden {
   position: absolute;
   left: -10000px;
