@@ -44,6 +44,11 @@ form {
     padding: 6px;
     text-align: center;
   }
+
+  button:disabled {
+    background: gray;
+    cursor: not-allowed;
+  }
 }
 
 table {

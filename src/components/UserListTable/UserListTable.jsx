@@ -3,7 +3,7 @@ import "./UserListTable.css";
 import { StatusIcon } from "./StatusIcon";
 import { Pencil, Trash2 } from "lucide-react";
 
-export const UserListTable = ({ users }) => {
+export const UserListTable = ({ users, onClickDelete, onClickEdit }) => {
   return (
     <section className="user-list-table" aria-live="polite">
       <h2>User List</h2>
@@ -17,7 +17,7 @@ export const UserListTable = ({ users }) => {
                 <th>Status</th>
                 <th>Created at</th>
                 <th>Updated at</th>
-                <th></th>
+                <th>Actions</th>
               </tr>
             </thead>
             <tbody>
@@ -39,12 +39,24 @@ export const UserListTable = ({ users }) => {
                       <span className="status">{user.status}</span>
                     </td>
                     <td>Created: {formatDateString(user.created)}</td>
-                    <td>Updated: {formatDateString(user.updated)}</td>
+                    <td>
+                      {user.updated
+                        ? `Updated: ${formatDateString(user.updated)}`
+                        : null}
+                    </td>
                     <td className="action-buttons-cell">
-                      <button aria-label="Delete user" type="button">
+                      <button
+                        aria-label="Delete user"
+                        type="button"
+                        onClick={() => onClickDelete(user.id)}
+                      >
                         <Trash2 size={14} color="white" />
                       </button>
-                      <button aria-label="Edit user" type="button">
+                      <button
+                        aria-label="Edit user"
+                        type="button"
+                        onClick={() => onClickEdit(user)}
+                      >
                         <Pencil size={14} color="white" />
                       </button>
                     </td>
@@ -54,7 +66,9 @@ export const UserListTable = ({ users }) => {
             </tbody>
           </table>
         </div>
-      ) : null}
+      ) : (
+        "No users available"
+      )}
     </section>
   );
 };
