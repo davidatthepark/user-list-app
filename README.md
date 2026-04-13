@@ -8,8 +8,9 @@ Live demo link: https://davidatthepark.github.io/user-list-app/
 - `npm install`
 - `npm run dev`
 
-## Things I didn't get to
+## Some things I would add if I had more time
 
-- Pagination for long list of users
+- More tests (components, functions, integration). I just added some basic integration tests for UserList.
 - Types/TypeScript
+- Pagination for long list of users
 - CSS namespacing with modules
