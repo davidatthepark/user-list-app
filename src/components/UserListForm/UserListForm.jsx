@@ -8,7 +8,7 @@ const initialFormState = {
   status: "active",
 };
 
-export const UserListForm = ({ editingUser, onSubmit }) => {
+export const UserListForm = ({ editingUser, onSubmit, onCancelEdit }) => {
   const [form, setForm] = useState(editingUser ?? initialFormState);
 
   useEffect(() => {
@@ -104,6 +104,11 @@ export const UserListForm = ({ editingUser, onSubmit }) => {
         <button type="submit" disabled={isEditingUserDisabled}>
           {editingUser ? "Edit" : "Add"}
         </button>
+        {editingUser ? (
+          <button type="button" onClick={onCancelEdit}>
+            Cancel Edit
+          </button>
+        ) : null}
       </form>
     </section>
   );

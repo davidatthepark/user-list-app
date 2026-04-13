@@ -31,12 +31,17 @@ export const UserList = ({ initialUsers = [] }) => {
     setEditingUser(null);
   };
 
+  const handleCancelEdit = () => {
+    setEditingUser(null);
+  };
+
   return (
     <div className="user-list">
       <div className="user-list-form-container">
         <UserListForm
           editingUser={editingUser}
           onSubmit={editingUser ? handleEditUser : handleAddUser}
+          onCancelEdit={handleCancelEdit}
         />
       </div>
       <div className="user-list-table-container">

@@ -37,11 +37,12 @@ form {
     margin-bottom: 12px;
   }
 
-  button[type="submit"] {
+  button {
+    background: #2196f3;
     border: none;
     color: white;
-    background: #2196f3;
     padding: 6px;
+    margin-bottom: 12px;
     text-align: center;
   }
 
